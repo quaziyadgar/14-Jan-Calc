@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" type="text/css">
+    <link rel="stylesheet" href="./calc.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <header>
+        <img src="https://geekster.in/images/logo.svg" alt="" height="100px">
+    </header>
+
+    <section class="calc-border">
+        
+        <div id="input-box">
+        </div >
+        <div id="input-box2">
+        </div >
+        <div class="btn-border">
+            <div class="calc-btn">
+                <button class="btn" onclick="">M+/-</button>
+                <button class="btn" onclick="cls();">Cls</button>
+                <button class="btn" onclick="undo();">C</button>
+                <button class="btn" onclick="setOperator('%');">%</button>
+            </div>
+            <div class="calc-btn">
+                <button class="btn" onclick="concatNumber('7');">7</button>
+                <button class="btn" onclick="concatNumber('8');">8</button>
+                <button class="btn" onclick="concatNumber('9');">9</button>
+                <button class="btn" onclick="setOperator('/');">/</button>
+            </div>
+            <div class="calc-btn">
+                <button class="btn" onclick="concatNumber('4');">4</button>
+                <button class="btn" onclick="concatNumber('5');">5</button>
+                <button class="btn" onclick="concatNumber('6');">6</button>
+                <button class="btn" onclick="setOperator('x');">x</button>
+            </div>
+            <div class="calc-btn">
+                <button class="btn" onclick="concatNumber('1');">1</button>
+                <button class="btn" onclick="concatNumber('2');">2</button>
+                <button class="btn" onclick="concatNumber('3');">3</button>
+                <button class="btn" onclick="setOperator('-');">-</button>
+            </div>
+            <div class="calc-btn">
+                <button class="btn" onclick="concatNumber('.');">.</button>
+                <button class="btn" onclick="concatNumber('0');">0</button>
+                <button class="btn" onclick="setOperator('+');">+</button>
+                <button class="btn equal" onclick="solution('=');">=</button>
+            </div>
+        </div>
+            
+        </div>
+    </section>
+
+    <script src="./script.js"></script>
+</body>
+</html>
